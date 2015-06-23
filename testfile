@@ -1,7 +1,30 @@
+cd *
 $ git config --global user.name "*"
 $ git config --global user.email "*"
 $ vim README.md
+$ git init
+Initialized empty Git repository in /*/.git/
+$ git commit -m "first commit"
+[master (root-commit) 0eb2eaa] first commit
+ 1 file changed, 1 insertion(+)
+$ git remote add origin https://github.com/exectroet/test.git
+$ git push -u origin master
+Username for 'https://github.com': *
+Password for 'https://*@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 215 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/exectroet/test.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+$ vim README.md
 $ vim testfile
+
 $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
@@ -18,6 +41,7 @@ Untracked files:
 	testfile
 
 no changes added to commit (use "git add" and/or "git commit -a")
+$ git add testfile
 $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
